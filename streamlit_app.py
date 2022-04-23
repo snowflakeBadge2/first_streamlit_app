@@ -4,7 +4,8 @@ streamlit.title('Snowflake Badge 2 Diner')
 
 streamlit.header('Menu')
 
-streamlit.text('1. Waffle')
-streamlit.text('2. Shrimp')
-streamlit.text('3. Taco')
-streamlit.text('4. Momo')
+streamlit.header('Breakfast Favorites')
+streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
+streamlit.text('🥗 Kale, Spinach & Rocket Smoothie')
+streamlit.text('🐔 Hard-Boiled Free-Range Egg')
+streamlit.text('🥑🍞 Avocado Toast')
