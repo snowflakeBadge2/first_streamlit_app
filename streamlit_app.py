@@ -4,7 +4,7 @@ streamlit.title('Snowflake Badge 2 Diner')
 
 streamlit.header('Menu')
 
-streamlit.text('Waffle')
-streamlit.text('Shrimp')
-streamlit.text('Taco')
-streamlit.text('Momo')
+streamlit.text('1. Waffle')
+streamlit.text('2. Shrimp')
+streamlit.text('3. Taco')
+streamlit.text('4. Momo')
