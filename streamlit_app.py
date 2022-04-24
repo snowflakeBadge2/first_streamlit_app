@@ -23,6 +23,9 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 
+
+streamlit.header('FRUITYVICE FRUIT ADVICE')
+
 fruityvice_response=requests.get("https://fruityvice.com/api/fruit/"+"kiwi")
 
 fruityvice_normalized=pd.json_normalize(fruityvice_response.json())
