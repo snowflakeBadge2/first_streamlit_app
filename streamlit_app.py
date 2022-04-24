@@ -46,4 +46,5 @@ streamlit.text("Fruits loaded from Snowflake:")
 streamlit.dataframe(my_data_rows)
 
 add_fruit=streamlit.text_input("Which fruit would you like to add?")
-my_cur.execute("INSERT INTO FRUIT_LOAD_LIST values(add_fruit)")
+add_cur=add_cnx.cursor()
+add_cur.execute("INSERT INTO FRUIT_LOAD_LIST values("+add_fruit+")")
