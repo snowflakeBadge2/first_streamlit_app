@@ -1,7 +1,9 @@
 import streamlit
-import pandas as pd
-import requests
+#import pandas as pd
+#import requests
 import snowflake.connector
+fromurllib.error import URLError
+
 
 streamlit.title('Snowflake Badge 2 Diner')
 
@@ -39,7 +41,7 @@ streamlit.dataframe(fruityvice_normalized)
 
 
 #stop snowflake code
-streamlit.stop
+streamlit.stop()
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
