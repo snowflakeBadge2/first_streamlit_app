@@ -34,7 +34,7 @@ streamlit.dataframe(fruits_to_show)
 
 
 
-streamlit.header('FRUITYVICE FRUIT ADVICE')
+streamlit.header('View Our Fruit List - Add Your Favourites')
 
 try:
   fruit_choice=streamlit.text_input("What fruit would you like information about?")
@@ -54,7 +54,7 @@ def get_fruit_load_list():
          my_cur.execute("SELECT * from FRUIT_LOAD_LIST")
          return my_cur.fetchall()
     
-if streamlit.button('Get Fruit Load List'):
+if streamlit.button('Get Fruit List'):
     my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
     my_data_rows = get_fruit_load_list()
     my_cnx.close()
